@@ -3,17 +3,20 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(void) {
+void swap(int x, int y){
+	int temp;
 	
-	int i=300;
+	temp=x;
+	x=y;
+	y=temp;
 	
-	int *pi=&i;
-	char *pc=&i;
+}
+void main(void) {
+	int a=3;
+	int b=5;
 	
-	printf("%i,%i,%i", i, *pi,*pc);
-	
-
-	return 0;
-	
+	swap(a,b);
+	printf("a: %i, b: %i\n",a,b );
+		
 	
 }
